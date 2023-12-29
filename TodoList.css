@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(225,235,255,0.3);;
+    color: rgb(100, 100, 100); 
+    min-width: 436px; 
+}
+
+main{
+    width: 50%;
+    min-height: 90vh;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    display: flex;
+    /* align-items:center; */
+    justify-content:flex-start;
+    text-align: center;
+    flex-flow: column;
+    background: rgba(225,235,255,0.35);
+    border: none;
+    border-style: outset;
+    margin-top: 4vh;
+    box-shadow: 0px 0px 35px 0px rgba(105,255,255,0.7);
+}
+
+.main_form{
+    display: flex;
+    justify-content: center;
+}
+.main_form input{
+    width: 60%;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: 0.05rem solid rgb(100, 100, 100);;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.main_form button{
+    width: 20%;
+    height: 2.25rem;    
+    font-size: 1.2rem;
+    border: 0.05rem solid rgb(100, 100, 100);;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* margin-left: 0; */
+    /* padding: 0.2rem; */
+    cursor: pointer;
+    
+}
+hr{
+    margin: 1.5rem auto;
+    width: 90%;
+       
+}
+
+.todo_list{
+    
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.todo_list li{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(175,195,215,0.1);
+    border: 2px solid ;
+    border-radius:10rem ;
+    list-style: none;
+    padding: 0.4rem 1rem;
+    transition: all 0.5s ease-in-out;
+    width: 80%;
+    margin: 0.2rem 0;
+    
+}   
+.todo_list li:hover{
+    width: 82%;
+    box-shadow: 0px 0px 10px 0px rgba(105,255,255,0.8);
+}
+
+.listBtn{
+    border: none;
+    border-radius: 40%;
+    padding: 0.2rem;
+    margin:0 0.2rem;
+    cursor: pointer;
+}
+.listBtn i:hover{
+    font-size: 1.6em;
+}
+
+@media(max-width:924px){
+    .main_form input, .main_form button,.todo_list li{
+        font-size: 0.8rem;
+    }
+    .listBtn i{
+        font-size: 0.875rem;
+    }
+    .listBtn i:hover{
+        font-size: 1.5em;
+    }
+    
+}
+
+.text{
+    text-transform: capitalize;
+}
+footer h6{
+    display: inline;
+}
+footer{
+    width: 50%;
+    margin: 0.2rem auto;
+    text-align: center;
+}
+
